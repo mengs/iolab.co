@@ -1,10 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
 
+
 body {
+
+float:right;
+position:absolute;
   padding:50px;
   font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#777;
   font-weight:300;
+style="background-image:url(pics/vi_background.jpg);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -21,7 +26,7 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size:28px;
+  font-size:22px;
 }
 
 h2 {
@@ -48,6 +53,11 @@ a small {
 .wrapper {
   width:860px;
   margin:0 auto;
+}
+.wrapper1 {
+  width:860px;
+  margin:0 auto;
+  background-image:url(pics/vi_background_narrow.jpg);
 }
 
 blockquote {
@@ -96,12 +106,13 @@ img {
 }
 
 header {
-  width:270px;
+  width:300px;
   float:left;
-  position:fixed;
-}
+/*  position:fixed;*/
+  }
 
-header ul {
+
+footer ul {
   list-style:none;
   height:40px;
   
@@ -118,17 +129,17 @@ header ul {
   border-radius:5px;
   border:1px solid #d2d2d2;
   box-shadow:inset #fff 0 1px 0, inset rgba(0,0,0,0.03) 0 -1px 0;
-  width:270px;
+  width:123px;
 }
 
-header li {
-  width:89px;
+footer li {
+  width:40px;
   float:left;
   border-right:1px solid #d2d2d2;
   height:40px;
 }
 
-header ul a {
+footer ul a {
   line-height:1;
   font-size:11px;
   color:#999;
@@ -136,6 +147,7 @@ header ul a {
   text-align:center;
   padding-top:6px;
   height:40px;
+     margin:0 0 0px;
 }
 
 strong {
@@ -143,26 +155,24 @@ strong {
   font-weight:700;
 }
 
-header ul li + li {
-  width:88px;
+footer ul li {
+  width:40px;
   border-left:1px solid #fff;
-}
-
-header ul li + li + li {
   border-right:none;
-  width:89px;
-}
 
-header ul a strong {
-  font-size:14px;
-  display:block;
-  color:#222;
 }
+footer p {
+ margin:0 0 5px;
+  padding:0px;}
+
+
 
 section {
   width:500px;
   float:right;
-  padding-bottom:50px;
+  padding:0px 50px 0px 50px;
+  margin-top: 80px;
+  background-color: #ffffff;
 }
 
 small {
@@ -174,13 +184,14 @@ hr {
   background:#e5e5e5;
   height:1px;
   margin:0 0 20px;
+  
 }
 
 footer {
   width:270px;
   float:left;
   position:fixed;
-  bottom:50px;
+  bottom:30px;
 }
 
 @media print, screen and (max-width: 960px) {
@@ -192,7 +203,7 @@ footer {
   
   header, section, footer {
     float:none;
-    position:static;
+    /*position:static*/;
     width:auto;
   }
   
@@ -211,7 +222,7 @@ footer {
     display:inline;
   }
   
-  header ul {
+  footer ul {
     position:absolute;
     right:50px;
     top:52px;
@@ -227,9 +238,6 @@ footer {
     padding:0;
   }
   
-  header ul, header p.view {
-    position:static;
-  }
   
   pre, code {
     word-wrap:normal;
